@@ -1,0 +1,10 @@
+<title>
+    Main
+</title>
+{% if questions %}
+    <ul>
+        {% for q in questions %}
+            <li>{{ q.question_text }}</li>
+        {% endfor %}
+    </ul>
+{% endif %}
